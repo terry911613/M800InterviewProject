@@ -76,7 +76,6 @@
 				448155FC264E626100BB30D6 /* Network */,
 				448155F7264E5FBD00BB30D6 /* Model */,
 				448155E1264E5D8700BB30D6 /* AppDelegate.swift */,
-				448155E5264E5D8700BB30D6 /* ViewController.swift */,
 				448155E7264E5D8700BB30D6 /* Main.storyboard */,
 				448155EA264E5D8800BB30D6 /* Assets.xcassets */,
 				448155EC264E5D8800BB30D6 /* LaunchScreen.storyboard */,
@@ -137,6 +136,7 @@
 		44815622264E846C00BB30D6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				448155E5264E5D8700BB30D6 /* ViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
