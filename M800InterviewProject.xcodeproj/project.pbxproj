@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		448155E2264E5D8700BB30D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155E1264E5D8700BB30D6 /* AppDelegate.swift */; };
-		448155E4264E5D8700BB30D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155E3264E5D8700BB30D6 /* SceneDelegate.swift */; };
 		448155E6264E5D8700BB30D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155E5264E5D8700BB30D6 /* ViewController.swift */; };
 		448155E9264E5D8700BB30D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448155E7264E5D8700BB30D6 /* Main.storyboard */; };
 		448155EB264E5D8800BB30D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448155EA264E5D8800BB30D6 /* Assets.xcassets */; };
 		448155EE264E5D8800BB30D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448155EC264E5D8800BB30D6 /* LaunchScreen.storyboard */; };
+		448155F9264E5FCA00BB30D6 /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155F8264E5FCA00BB30D6 /* MusicInfo.swift */; };
+		448155FE264E626F00BB30D6 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155FD264E626F00BB30D6 /* NetworkRouter.swift */; };
+		44815603264E62A400BB30D6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44815602264E62A400BB30D6 /* AppError.swift */; };
+		44815608264E62C200BB30D6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44815607264E62C200BB30D6 /* UIImageView+Extension.swift */; };
+		4481560D264E632800BB30D6 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481560C264E632800BB30D6 /* MusicViewModel.swift */; };
+		44815618264E675500BB30D6 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44815616264E675500BB30D6 /* MusicTableViewCell.swift */; };
+		44815619264E675500BB30D6 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44815617264E675500BB30D6 /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		448155DE264E5D8700BB30D6 /* M800InterviewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M800InterviewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448155E1264E5D8700BB30D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		448155E3264E5D8700BB30D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		448155E5264E5D8700BB30D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		448155E8264E5D8700BB30D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		448155EA264E5D8800BB30D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448155ED264E5D8800BB30D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448155EF264E5D8800BB30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448155F8264E5FCA00BB30D6 /* MusicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
+		448155FD264E626F00BB30D6 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		44815602264E62A400BB30D6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		44815607264E62C200BB30D6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4481560C264E632800BB30D6 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		44815616264E675500BB30D6 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		44815617264E675500BB30D6 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +68,14 @@
 		448155E0264E5D8700BB30D6 /* M800InterviewProject */ = {
 			isa = PBXGroup;
 			children = (
+				44815622264E846C00BB30D6 /* UIViewController */,
+				44815611264E672F00BB30D6 /* UITableViewCell */,
+				4481560B264E631900BB30D6 /* ViewModel */,
+				44815606264E62BA00BB30D6 /* Extension */,
+				44815601264E629700BB30D6 /* Error */,
+				448155FC264E626100BB30D6 /* Network */,
+				448155F7264E5FBD00BB30D6 /* Model */,
 				448155E1264E5D8700BB30D6 /* AppDelegate.swift */,
-				448155E3264E5D8700BB30D6 /* SceneDelegate.swift */,
 				448155E5264E5D8700BB30D6 /* ViewController.swift */,
 				448155E7264E5D8700BB30D6 /* Main.storyboard */,
 				448155EA264E5D8800BB30D6 /* Assets.xcassets */,
@@ -65,6 +83,62 @@
 				448155EF264E5D8800BB30D6 /* Info.plist */,
 			);
 			path = M800InterviewProject;
+			sourceTree = "<group>";
+		};
+		448155F7264E5FBD00BB30D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				448155F8264E5FCA00BB30D6 /* MusicInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		448155FC264E626100BB30D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				448155FD264E626F00BB30D6 /* NetworkRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		44815601264E629700BB30D6 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				44815602264E62A400BB30D6 /* AppError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		44815606264E62BA00BB30D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44815607264E62C200BB30D6 /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4481560B264E631900BB30D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4481560C264E632800BB30D6 /* MusicViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44815611264E672F00BB30D6 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				44815616264E675500BB30D6 /* MusicTableViewCell.swift */,
+				44815617264E675500BB30D6 /* MusicTableViewCell.xib */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		44815622264E846C00BB30D6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +201,7 @@
 				448155EE264E5D8800BB30D6 /* LaunchScreen.storyboard in Resources */,
 				448155EB264E5D8800BB30D6 /* Assets.xcassets in Resources */,
 				448155E9264E5D8700BB30D6 /* Main.storyboard in Resources */,
+				44815619264E675500BB30D6 /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +214,12 @@
 			files = (
 				448155E6264E5D8700BB30D6 /* ViewController.swift in Sources */,
 				448155E2264E5D8700BB30D6 /* AppDelegate.swift in Sources */,
-				448155E4264E5D8700BB30D6 /* SceneDelegate.swift in Sources */,
+				44815608264E62C200BB30D6 /* UIImageView+Extension.swift in Sources */,
+				44815603264E62A400BB30D6 /* AppError.swift in Sources */,
+				4481560D264E632800BB30D6 /* MusicViewModel.swift in Sources */,
+				448155FE264E626F00BB30D6 /* NetworkRouter.swift in Sources */,
+				448155F9264E5FCA00BB30D6 /* MusicInfo.swift in Sources */,
+				44815618264E675500BB30D6 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVB2JZ6L9X;
 				INFOPLIST_FILE = M800InterviewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVB2JZ6L9X;
 				INFOPLIST_FILE = M800InterviewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
